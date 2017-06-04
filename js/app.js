@@ -1,5 +1,5 @@
-var viewModel = function(){
+var ViewModel = function(){
 
 };
 
-ko.applyBindings(new viewModel());
+ko.applyBindings(new ViewModel());
