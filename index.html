@@ -16,6 +16,10 @@
         <div>
             <h2>Nicknames:</h2>
             <ul data-bind="foreach: nickName">
+            /* How the data bind gets the name value from the array without conflicting with name property of the ViewModel?
+                foreach binding deals each item of the array considering the scope according to the current item. By default
+                current item is $data. As the data binding of the name property of current item is inside foreach binding, it 
+                gets the current item name property rather name property of the ViewModel. */
                 <li data-bind="text: name"></li>
             </ul>
             
