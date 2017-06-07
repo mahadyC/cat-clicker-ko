@@ -9,7 +9,11 @@ var ViewModel = function(){
 
 	this.catLevel = ko.computed(function(){
 		if(this.clickCount() < 10){
-			return "new born";
+			return "Newborn";
+		}else if(this.clickCount() >= 10 && this.clickCount() < 20){
+			return "Infant";
+		}else {
+			return "Teen";
 		}
 	}, this);
 };
