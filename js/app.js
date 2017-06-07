@@ -3,9 +3,10 @@ var ViewModel = function(){
 	this.name = ko.observable("fluffy");
 	this.imgSrc = ko.observable("img/22252709_010df3379e_z.jpg");
 	this.nickName = ko.observableArray([
-		{
-			names:["Tammy", "Chuci", "Mew", "Arr"]
-		}
+		{ name: "Tammy" },
+		{ name: "Meow" },
+		{ name: "Cuddly"},
+		{ name: "Glu"}
 	]);
 
 	this.incrementCounter = function(){
