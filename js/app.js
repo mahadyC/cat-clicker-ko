@@ -8,7 +8,7 @@ var ViewModel = function(){
 	};
 
 	this.catLevel = ko.computed(function(){
-		if(this.clickCount < 10){
+		if(this.clickCount() < 10){
 			return "new born";
 		}
 	}, this);
