@@ -11,7 +11,7 @@
         <h2 data-bind="text: currentCat().name"></h2>
         <div data-bind="text: currentCat().catLevel"></div>
         <div data-bind="text: currentCat().clickCount"></div>
-        <img src="" alt="cute cat" data-bind="click: incrementCounter, attr:{src: imgSrc}">
+        <img src="" alt="cute cat" data-bind="click: incrementCounter, attr:{src: currentCat().imgSrc}">
 
         <div>
             <h2>Nicknames:</h2>
