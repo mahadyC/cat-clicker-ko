@@ -1,4 +1,4 @@
-var Cat = function(){
+var Cat = function(data){
 	
 	this.clickCount = ko.observable(0);
 	this.name = ko.observable("fluffy");
