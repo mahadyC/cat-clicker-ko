@@ -1,14 +1,9 @@
 var Cat = function(data){
 	
-	this.clickCount = ko.observable(0);
-	this.name = ko.observable("fluffy");
-	this.imgSrc = ko.observable("img/22252709_010df3379e_z.jpg");
-	this.nickName = ko.observableArray([
-		{ name: "Tammy" },
-		{ name: "Meow" },
-		{ name: "Cuddly"},
-		{ name: "Glu"}
-	]);
+	this.clickCount = ko.observable(data.clickCount);
+	this.name = ko.observable(data.name);
+	this.imgSrc = ko.observable(data.imgSrc);
+	this.nickName = ko.observableArray(data.nickName);
 
 	this.catLevel = ko.computed(function(){
 		if(this.clickCount() < 10){
