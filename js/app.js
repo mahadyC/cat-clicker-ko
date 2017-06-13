@@ -36,7 +36,7 @@ var Cat = function(data){
 	
 	this.clickCount = ko.observable(data.clickCount);
 	this.name = ko.observable(data.name);
-	this.imgSrc = ko.observable(data.imgSrc);
+	this.imgSrc = ko.observable(data.image);
 	this.nickName = ko.observableArray(data.nickName);
 
 	this.catLevel = ko.computed(function(){
