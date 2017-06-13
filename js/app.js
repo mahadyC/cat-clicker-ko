@@ -53,6 +53,8 @@ var Cat = function(data){
 
 var ViewModel = function(){
 	
+	this.catList = ko.observableArray([]);
+
 	this.currentCat = ko.observable( new Cat({
 		clickCount: 0,
 		name: "fluffy",
